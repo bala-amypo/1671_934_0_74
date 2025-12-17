@@ -50,6 +50,8 @@ public class Student {
         this.dob = dob;
         this.cgpa = cgpa;
     }
-    
+    public Student(){
+        
+    }
 
 }
