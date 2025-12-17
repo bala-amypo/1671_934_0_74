@@ -16,5 +16,11 @@ public Student insertStudent(Student st){
     return strepo.save(st);
 }
 @Override
-public List<Student> getAl1Students 
+public List<Student> getAllStudents{
+    return strepo.findAll(st);
+} 
+@Override
+public Optional<Student> getOneStudent(id){
+    return strepo.find(st);
+}
 }

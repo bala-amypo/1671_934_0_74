@@ -28,7 +28,7 @@ return studentService.insertStudent(st);
 
 @GetMapping("/getA11")
 public List<Student> getAll(){
-return studentService.getAl1Students();
+return studentService.getAllStudents();
 }
 
 @GetMapping("/get/{id}")
