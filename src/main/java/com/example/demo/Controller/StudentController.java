@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.demo.Controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.entity.Student;
-import com.example.demo.service.StudentService;
+import com.example.demo.Entity.Student;
+import com.example.demo.Service.StudentService;
 
 @CrossOrigin(origins = "*")
 @RestController
