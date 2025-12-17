@@ -6,11 +6,10 @@ import org.springframework.stereotype.Service;
 import com.example.demo.entity.Student;
 import com.example.demo.repository.StudentRepo;
 import com.example.demo.service.StudentService;
-
 @Service
 public class StudentServiceImpl implements StudentService{
 @Autowired
-StudentRepo strepo
+StudentRepo strepo;
 @Override
 public Student insertStudent(Student st){
     return strepo.save(st);
@@ -20,7 +19,11 @@ public List<Student> getAllStudents{
     return strepo.findAll(st);
 } 
 @Override
-public Optional<Student> getOneStudent(id){
-    return strepo.find(st);
+public Optional<Student> getOneStudent(Long id){
+    return strepo.findById(id);
+}
+@Override
+public void deleteStudent(Long id){
+    return strepo.deleteById(id);
 }
 }
